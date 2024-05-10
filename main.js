@@ -72,3 +72,21 @@ function calculate() {
     result.textContent = operationResult;
 }
 
+
+document.getElementById("addizione").addEventListener("click", function() {
+    setOperator('+');
+});
+
+document.getElementById("sottrazione").addEventListener("click", function() {
+    setOperator('-');
+});
+
+document.getElementById("moltiplicazione").addEventListener("click", function() {
+    setOperator('*');
+});
+
+document.getElementById("divisione").addEventListener("click", function() {
+    setOperator('/');
+});
+
+document.querySelector(".orange").addEventListener("click", calculate);
